@@ -193,11 +193,14 @@ function inpLinesLimitEvent(){
     inpLinesLimit.addEventListener('keyup', ({key}) => {
         if (key === "Enter") {
             let value = inpLinesLimit.value;
-            if (value >= 60) {
+            if (value >= 60 && value <= 24000) {
                 linesLimit = value;
                 console.log("Lines limit set to " + linesLimit);
                 ClearCanvas();
                 inpLinesLimit.style.visibility = "hidden";
+            }else
+            {
+                console.log("Lines limit must be between 60 and 24000");
             }
         }
     });
