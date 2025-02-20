@@ -17,14 +17,6 @@ var maxAttempts = 50;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-ctx.beginPath();
-ctx.moveTo(0, 0);
-//ctx.ellipse(100, 100, 20, 20, Math.PI / 4, 20, 20);
-
-// ctx.roundRect(100, 100, 5, 5, 40);
-// ctx.fillStyle = "white";
-// ctx.fill();
-
 function GenerateDots(dotsNumber) {
     for (let i = 0; i < dotsNumber && attempts < maxAttempts; i++) {
         attempts = 0;
