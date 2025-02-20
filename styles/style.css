@@ -23,6 +23,7 @@ html, body{
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
+    border: #fff 2px solid;
 }
 
 #download:hover{
